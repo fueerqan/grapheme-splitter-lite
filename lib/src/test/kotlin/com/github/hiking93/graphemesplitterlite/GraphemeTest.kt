@@ -96,6 +96,10 @@ class GraphemeTest {
             listOf("\uD83C\uDDEF\uD83C\uDDF5", "\uD83C\uDDEF"),
             GraphemeSplitter().split("\uD83C\uDDEF\uD83C\uDDF5\uD83C\uDDEF")
         )
+        Assertions.assertEquals(
+            listOf("\uD83C\uDDEF\uD83C\uDDF5", "\uD83C\uDDEF\uD83C\uDDF5"),
+            GraphemeSplitter().split("\uD83C\uDDEF\uD83C\uDDF5\uD83C\uDDEF\uD83C\uDDF5")
+        )
     }
 
     @Test
