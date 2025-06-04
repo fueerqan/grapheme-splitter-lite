@@ -61,6 +61,7 @@ class GraphemeSplitter {
             ) {
                 if (regionalIndicatorPairEndIndex < index) {
                     regionalIndicatorPairEndIndex = index + Character.toChars(codePointAtIndex).size
+                    breaks += index
                     continue
                 }
             }
